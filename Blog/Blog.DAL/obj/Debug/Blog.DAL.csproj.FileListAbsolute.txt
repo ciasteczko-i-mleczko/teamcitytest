@@ -1,0 +1,6 @@
+D:\Blog\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll
+D:\Blog\Blog\Blog.DAL\bin\Debug\Blog.DAL.pdb
+D:\Blog\Blog\Blog.DAL\bin\Debug\EntityFramework.dll
+D:\Blog\Blog\Blog.DAL\bin\Debug\EntityFramework.xml
+D:\Blog\Blog\Blog.DAL\obj\Debug\Blog.DAL.dll
+D:\Blog\Blog\Blog.DAL\obj\Debug\Blog.DAL.pdb

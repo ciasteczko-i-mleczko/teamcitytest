@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3b566d74-e452-4136-9840-fd2c88bb7cfa" name="student@KOMP055 2016-01-26 16:13:31" runUser="NMKZLLAB\student" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="31046817-227f-4161-9a97-5d34efa999fb">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="student_KOMP055 2016-01-26 16_13_31">
+      <DeploymentItem filename="D:\Blog\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll" />
+      <DeploymentItem filename="D:\Blog\Blog\packages\DbTestHelpers\TDD.DbTestHelpers.dll" />
+      <DeploymentItem filename="D:\Blog\Blog\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="D:\Blog\Blog\packages\DbTestHelpers\YamlDotNet.RepresentationModel.dll" />
+      <DeploymentItem filename="D:\Blog\Blog\packages\DbTestHelpers\YamlDotNet.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-01-26T16:13:31.2730150+01:00" queuing="2016-01-26T16:13:31.3190150+01:00" start="2016-01-26T16:13:31.3220150+01:00" finish="2016-01-26T16:13:32.5230150+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetAllPost_TwoPostInDb_ReturnOnePost" storage="d:\blog\blog\blog.dal.tests\bin\debug\blog.dal.tests.dll" id="3607fe97-e967-2c3b-a138-7aad1f79e59d">
+      <Execution id="4af70ac4-773d-4be8-8c5d-c035764a45e2" />
+      <TestMethod codeBase="D:/Blog/Blog/Blog.DAL.Tests/bin/Debug/Blog.DAL.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Blog.DAL.Tests.RepositoryTests, Blog.DAL.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllPost_TwoPostInDb_ReturnOnePost" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3607fe97-e967-2c3b-a138-7aad1f79e59d" executionId="4af70ac4-773d-4be8-8c5d-c035764a45e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4af70ac4-773d-4be8-8c5d-c035764a45e2" testId="3607fe97-e967-2c3b-a138-7aad1f79e59d" testName="GetAllPost_TwoPostInDb_ReturnOnePost" computerName="KOMP055" duration="00:00:01.0771833" startTime="2016-01-26T16:13:31.3230150+01:00" endTime="2016-01-26T16:13:32.5130150+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4af70ac4-773d-4be8-8c5d-c035764a45e2">
+      <Output>
+        <DebugTrace>Constr
+SetUp
+Applying fixtures
+D:\Blog\Blog\Blog.DAL.Tests\bin\Debug\Fixtures\posts.yml
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Initialization method Blog.DAL.Tests.RepositoryTests.BaseSetUp threw exception. System.Exception: System.Exception: Cannot deserialize YAML file. See inner exception. ---&gt; System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; YamlDotNet.Core.SyntaxErrorException: (Lin: 3, Col: 10, Chr: 42) - (Lin: 3, Col: 10, Chr: 42): Mapping values are not allowed in this context..</Message>
+          <StackTrace>    at YamlDotNet.Core.Scanner.FetchValue() in d:\antoine\yamldotnet_v1\YamlDotNet.Core\Scanner.cs:line 1045
+   at YamlDotNet.Core.Scanner.FetchNextToken() in d:\antoine\yamldotnet_v1\YamlDotNet.Core\Scanner.cs:line 397
+   at YamlDotNet.Core.Scanner.FetchMoreTokens() in d:\antoine\yamldotnet_v1\YamlDotNet.Core\Scanner.cs:line 219
+   at YamlDotNet.Core.Scanner.InternalMoveNext() in d:\antoine\yamldotnet_v1\YamlDotNet.Core\Scanner.cs:line 154
+   at YamlDotNet.Core.Parser.GetCurrentToken() in d:\antoine\yamldotnet_v1\YamlDotNet.Core\Parser.cs:line 49
+   at YamlDotNet.Core.Parser.ParseBlockMappingKey(Boolean isFirst) in d:\antoine\yamldotnet_v1\YamlDotNet.Core\Parser.cs:line 659
+   at YamlDotNet.Core.Parser.StateMachine() in d:\antoine\yamldotnet_v1\YamlDotNet.Core\Parser.cs:line 140
+   at YamlDotNet.Core.Parser.MoveNext() in d:\antoine\yamldotnet_v1\YamlDotNet.Core\Parser.cs:line 94
+   at YamlDotNet.Core.EventReader.Expect[T]() in d:\antoine\yamldotnet_v1\YamlDotNet.Core\EventReader.cs:line 86
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.DeserializeScalar(EventReader reader, Type type, DeserializationContext context) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 849
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.DeserializeValueNotNull(EventReader reader, DeserializationContext context, INodeEvent nodeEvent, Type expectedType) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 841
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.DeserializeValue(EventReader reader, Type expectedType, DeserializationContext context) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 791
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.DeserializeProperties(EventReader reader, Type type, DeserializationContext context) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 1090
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.DeserializeValueNotNull(EventReader reader, DeserializationContext context, INodeEvent nodeEvent, Type expectedType) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 831
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.DeserializeValue(EventReader reader, Type expectedType, DeserializationContext context) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 791
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.DeserializeProperties(EventReader reader, Type type, DeserializationContext context) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 1129
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.DeserializeValueNotNull(EventReader reader, DeserializationContext context, INodeEvent nodeEvent, Type expectedType) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 831
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.DeserializeValue(EventReader reader, Type expectedType, DeserializationContext context) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 791
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.Deserialize(EventReader reader, DeserializationOptions options, IDeserializationContext&amp; context) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 755
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer.Deserialize(TextReader input, DeserializationOptions options) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 694
+   at YamlDotNet.RepresentationModel.Serialization.YamlSerializer`1.Deserialize(TextReader input) in d:\antoine\yamldotnet_v1\YamlDotNet.RepresentationModel\Serialization\YamlSerializer.cs:line 1236
+ --- End of inner exception stack trace ---
+    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at TDD.DbTestHelpers.Helpers.FileHelper.GetFixutresFromYaml(Type fixtureType, String yamlFolderName, IEnumerable`1 yamlFullFilesNames) in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Helpers\FileHelper.cs:line 69
+ --- End of inner exception stack trace ---
+    at TDD.DbTestHelpers.Helpers.FileHelper.GetFixutresFromYaml(Type fixtureType, String yamlFolderName, IEnumerable`1 yamlFullFilesNames) in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Helpers\FileHelper.cs:line 73
+   at TDD.DbTestHelpers.Helpers.FileHelper.FillFixturesFileFiles(Type fixtureType, DbContext context, String yamlFolderName, IEnumerable`1 yamlFullFilesNames) in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Helpers\FileHelper.cs:line 42
+   at TDD.DbTestHelpers.Helpers.FileHelper.FillFixturesFileFiles[TFixtureType](DbContext context, String yamlFolderName, IEnumerable`1 yamlFilesNames) in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Helpers\FileHelper.cs:line 37
+   at TDD.DbTestHelpers.Yaml.YamlDbFixture`2.FillFixtures() in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Yaml\YamlDbFixture.cs:line 38
+   at TDD.DbTestHelpers.Core.DbBaseTest`1.ApplyFixtures() in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Core\DbBaseTest.cs:line 45
+   at TDD.DbTestHelpers.Core.DbBaseTest`1.BaseSetUp() in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Core\DbBaseTest.cs:line 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

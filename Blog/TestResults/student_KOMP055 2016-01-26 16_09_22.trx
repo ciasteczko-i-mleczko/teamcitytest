@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="bd4d5f84-0b39-47c5-baea-b776d8643bba" name="student@KOMP055 2016-01-26 16:09:22" runUser="NMKZLLAB\student" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="31046817-227f-4161-9a97-5d34efa999fb">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="student_KOMP055 2016-01-26 16_09_22">
+      <DeploymentItem filename="D:\Blog\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll" />
+      <DeploymentItem filename="D:\Blog\Blog\packages\DbTestHelpers\TDD.DbTestHelpers.dll" />
+      <DeploymentItem filename="D:\Blog\Blog\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="D:\Blog\Blog\packages\DbTestHelpers\YamlDotNet.RepresentationModel.dll" />
+      <DeploymentItem filename="D:\Blog\Blog\packages\DbTestHelpers\YamlDotNet.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-01-26T16:09:22.6491419+01:00" queuing="2016-01-26T16:09:22.6803415+01:00" start="2016-01-26T16:09:22.6803415+01:00" finish="2016-01-26T16:09:23.8971259+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetAllPost_TwoPostsInDb_ReturnTwoPost" storage="d:\blog\blog\blog.dal.tests\bin\debug\blog.dal.tests.dll" id="fdec4b90-689d-dd08-c8bb-55f11156ee11">
+      <Execution id="0b81abb2-ee56-4fa8-a9be-9ce81c5f721b" />
+      <TestMethod codeBase="D:/Blog/Blog/Blog.DAL.Tests/bin/Debug/Blog.DAL.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Blog.DAL.Tests.RepositoryTests, Blog.DAL.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllPost_TwoPostsInDb_ReturnTwoPost" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="fdec4b90-689d-dd08-c8bb-55f11156ee11" executionId="0b81abb2-ee56-4fa8-a9be-9ce81c5f721b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0b81abb2-ee56-4fa8-a9be-9ce81c5f721b" testId="fdec4b90-689d-dd08-c8bb-55f11156ee11" testName="GetAllPost_TwoPostsInDb_ReturnTwoPost" computerName="KOMP055" duration="00:00:01.0956300" startTime="2016-01-26T16:09:22.6803415+01:00" endTime="2016-01-26T16:09:23.8815261+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b81abb2-ee56-4fa8-a9be-9ce81c5f721b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;2&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at Blog.DAL.Tests.RepositoryTests.GetAllPost_TwoPostsInDb_ReturnTwoPost() in D:\Blog\Blog\Blog.DAL.Tests\RepositoryTests.cs:line 46
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
